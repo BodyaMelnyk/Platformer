@@ -8,6 +8,7 @@ public class SquateRotator : MonoBehaviour
 
     private void Update()
     {
+        transform.position = Vector2.Lerp(transform.position, _positionB, 5 * Time.deltaTime);
         transform.Rotate(0, 0, 360 * 6 * Time.deltaTime);  
     }
 }
